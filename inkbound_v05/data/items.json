@@ -1,0 +1,15 @@
+{
+  "potion_s":    { "id":"potion_s",    "name":"Small Potion",  "type":"consume", "price":25,  "desc":"Restores 30 HP.",              "effect":{"hp":30} },
+  "potion_m":    { "id":"potion_m",    "name":"Medium Potion", "type":"consume", "price":70,  "desc":"Restores 80 HP.",              "effect":{"hp":80} },
+  "elixir":      { "id":"elixir",      "name":"Elixir",        "type":"consume", "price":0,   "desc":"Fully restores HP and MP.",    "effect":{"hp":9999,"mp":9999} },
+  "rusty_sword": { "id":"rusty_sword", "name":"Rusty Sword",   "type":"equip",   "slot":"weapon", "price":30,  "desc":"It's seen things.",         "bonus":{"atk":3} },
+  "iron_sword":  { "id":"iron_sword",  "name":"Iron Sword",    "type":"equip",   "slot":"weapon", "price":120, "desc":"A reliable blade.",          "bonus":{"atk":8} },
+  "cloth_robe":  { "id":"cloth_robe",  "name":"Cloth Robe",    "type":"equip",   "slot":"armor",  "price":40,  "desc":"Basic vestment.",            "bonus":{"def":2,"res":3} },
+  "chain_mail":  { "id":"chain_mail",  "name":"Chain Mail",    "type":"equip",   "slot":"armor",  "price":200, "desc":"Heavy but trusty.",          "bonus":{"def":10,"hp":15} },
+  "shadow_cloak":{ "id":"shadow_cloak","name":"Shadow Cloak",  "type":"equip",   "slot":"armor",  "price":0,   "desc":"Woven from darkness. Dungeon drop.", "bonus":{"def":8,"res":6,"dodge":5} },
+  "luck_charm":  { "id":"luck_charm",  "name":"Luck Charm",    "type":"equip",   "slot":"acc",    "price":150, "desc":"A four-leafed clover.",      "bonus":{"crit":5,"dodge":3} },
+  "soul_ring":   { "id":"soul_ring",   "name":"Soul Ring",     "type":"equip",   "slot":"acc",    "price":0,   "soulCost":5,  "desc":"+1 CRIT & DODGE per level.", "bonus":{}, "bonusPerLevel":{"crit":1,"dodge":1} },
+  "void_pendant":{ "id":"void_pendant","name":"Void Pendant",  "type":"equip",   "slot":"acc",    "price":0,   "soulCost":10, "desc":"+2 MAG & +1 RES per level.", "bonus":{}, "bonusPerLevel":{"mag":2,"res":1} },
+  "soul_edge":   { "id":"soul_edge",   "name":"Soul Edge",     "type":"equip",   "slot":"weapon", "price":0,   "soulCost":8,  "desc":"+2 ATK & +1 CRIT per level.","bonus":{}, "bonusPerLevel":{"atk":2,"crit":1} },
+  "wraith_armor":{ "id":"wraith_armor","name":"Wraith Armor",  "type":"equip",   "slot":"armor",  "price":0,   "soulCost":8,  "desc":"+2 DEF & +3 HP per level.",  "bonus":{}, "bonusPerLevel":{"def":2,"hp":3} }
+}

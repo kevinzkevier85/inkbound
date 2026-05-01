@@ -1,0 +1,16 @@
+{
+  "slime":          { "name":"Slime",           "sketch":"🟢", "lvl":1,  "hp":20,  "atk":4,  "def":1,  "spd":3,  "mag":0,  "res":1,  "expR":[5,9],     "moneyR":[3,7],    "drops":[["potion_s",0.15]] },
+  "goblin":         { "name":"Goblin",          "sketch":"👺", "lvl":2,  "hp":30,  "atk":6,  "def":2,  "spd":5,  "mag":0,  "res":1,  "expR":[8,14],    "moneyR":[5,12],   "drops":[["potion_s",0.2]] },
+  "giant_slime":    { "name":"Giant Slime",     "sketch":"🟩", "lvl":5,  "hp":90,  "atk":12, "def":5,  "spd":2,  "mag":2,  "res":3,  "expR":[30,50],   "moneyR":[40,80],  "miniboss":true, "drops":[["potion_s",0.4],["potion_m",0.2]] },
+
+  "shadow_wolf":    { "name":"Shadow Wolf",     "sketch":"🐺", "lvl":6,  "hp":70,  "atk":14, "def":4,  "spd":8,  "mag":0,  "res":3,  "expR":[22,35],   "moneyR":[10,20],  "soulR":[1,2], "drops":[["potion_s",0.2]] },
+  "void_bat":       { "name":"Void Bat",        "sketch":"🦇", "lvl":5,  "hp":45,  "atk":10, "def":2,  "spd":10, "mag":3,  "res":4,  "expR":[16,26],   "moneyR":[8,15],   "soulR":[1,1], "drops":[] },
+  "wraith":         { "name":"Wraith",          "sketch":"👻", "lvl":7,  "hp":60,  "atk":13, "def":3,  "spd":7,  "mag":15, "res":8,  "expR":[28,42],   "moneyR":[12,22],  "soulR":[1,3], "drops":[["potion_m",0.2]] },
+  "void_sentinel":  { "name":"Void Sentinel",   "sketch":"🌑", "lvl":9,  "hp":140, "atk":20, "def":8,  "spd":6,  "mag":10, "res":10, "expR":[60,90],   "moneyR":[50,90],  "soulR":[3,6], "miniboss":true, "drops":[["potion_m",0.5]] },
+  "soul_eater":     { "name":"Soul Eater",      "sketch":"👁️", "lvl":15, "hp":400, "atk":32, "def":14, "spd":10, "mag":28, "res":14, "expR":[300,500], "moneyR":[200,400],"soulR":[10,20], "special":true, "drops":[["elixir",1.0]] },
+
+  "vampire":        { "name":"Vampire",         "sketch":"🧛", "lvl":9,  "hp":100, "atk":18, "def":6,  "spd":9,  "mag":12, "res":7,  "expR":[40,60],   "moneyR":[25,45],  "drops":[["potion_m",0.2]] },
+  "skeleton_knight":{ "name":"Skeleton Knight", "sketch":"💀", "lvl":10, "hp":130, "atk":22, "def":12, "spd":5,  "mag":2,  "res":8,  "expR":[50,75],   "moneyR":[30,55],  "drops":[["iron_sword",0.08]] },
+  "dark_mage":      { "name":"Dark Mage",       "sketch":"🧙", "lvl":11, "hp":90,  "atk":10, "def":4,  "spd":7,  "mag":26, "res":12, "expR":[55,80],   "moneyR":[28,50],  "drops":[["potion_m",0.25]] },
+  "lich":           { "name":"Lich",            "sketch":"☠️", "lvl":13, "hp":220, "atk":25, "def":10, "spd":6,  "mag":35, "res":18, "expR":[100,150], "moneyR":[80,140], "miniboss":true, "drops":[["elixir",0.15],["shadow_cloak",0.2]] }
+}
