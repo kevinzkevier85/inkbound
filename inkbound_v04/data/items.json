@@ -1,7 +1,0 @@
-{
-  "potion_s": { "id":"potion_s","name":"Small Potion","type":"consume","price":25,"desc":"Restores 30 HP.","effect":{"hp":30} },
-  "rusty_sword":{ "id":"rusty_sword","name":"Rusty Sword","type":"equip","slot":"weapon","price":30,"desc":"It's seen things.","bonus":{"atk":3} },
-  "iron_sword": { "id":"iron_sword","name":"Iron Sword","type":"equip","slot":"weapon","price":120,"desc":"A reliable blade.","bonus":{"atk":8} },
-  "cloth_robe": { "id":"cloth_robe","name":"Cloth Robe","type":"equip","slot":"armor","price":40,"desc":"Basic vestment.","bonus":{"def":2,"res":3} },
-  "luck_charm": { "id":"luck_charm","name":"Luck Charm","type":"equip","slot":"acc","price":150,"desc":"A four-leafed clover.","bonus":{"crit":5,"dodge":3} }
-}
