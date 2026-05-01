@@ -1,0 +1,16 @@
+{
+  "hp_per_vit": 6,
+  "hp_per_level": 4,
+  "mp_per_wis": 3,
+  "mp_per_int": 1,
+  "mp_per_level": 2,
+  "exp_curve_base": 10,
+  "exp_curve_linear": 12,
+  "exp_curve_quad": 3,
+  "base_hit_chance": 90,
+  "crit_multiplier": 1.7,
+  "miniboss_chance": 0.12,
+  "special_spawn_chance": 0.04,
+  "inn_cost": 10,
+  "death_money_loss": 0.3
+}
