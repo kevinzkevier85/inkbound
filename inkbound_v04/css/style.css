@@ -1,0 +1,158 @@
+/* Inkbound — modular version */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Caveat:wght@400;700&display=swap');
+
+:root {
+  --paper:     #f1e3c4;
+  --paper-dk:  #d9c79a;
+  --ink:       #2a1d10;
+  --ink-soft:  #5a4226;
+  --ink-fade:  #8a7048;
+  --red:       #8b2a1a;
+  --green:     #3e5d2a;
+  --blue:      #2c4a6b;
+  --gold:      #a8801c;
+  --purple:    #6b1e8a;
+  --serif:     'IM Fell English', serif;
+  --caps:      'IM Fell English SC', serif;
+  --hand:      'Caveat', cursive;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--serif);
+  color: var(--ink);
+  background: radial-gradient(ellipse at 30% 20%, #5a4022, #1a1208);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 16px 60px;
+}
+
+/* ── Paper ────────────────────────────────── */
+.paper {
+  background:
+    radial-gradient(circle at 12% 88%, rgba(120,75,30,.18) 0%, transparent 6%),
+    radial-gradient(ellipse at 50% 50%, var(--paper) 60%, var(--paper-dk) 100%);
+  box-shadow: 0 20px 40px rgba(0,0,0,.55), inset 0 0 60px rgba(120,80,30,.18);
+  padding: 36px 44px 50px;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 1050px;
+}
+
+/* ── Header ───────────────────────────────── */
+header { text-align: center; border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 22px; }
+header h1 { font-family: var(--caps); font-size: 42px; letter-spacing: .06em; }
+header h1 span { color: var(--red); font-style: italic; }
+.sub { font-family: var(--hand); font-size: 20px; color: var(--ink-soft); }
+
+/* ── Layout ───────────────────────────────── */
+.columns { display: grid; grid-template-columns: 300px 1fr; gap: 24px; }
+@media (max-width: 800px) { .columns { grid-template-columns: 1fr; } }
+
+/* ── Panel ────────────────────────────────── */
+.panel { border: 1.5px solid var(--ink); padding: 14px 16px; margin-bottom: 16px; }
+.panel.dashed { border-style: dashed; }
+.panel h2 { font-family: var(--caps); font-size: 17px; letter-spacing: .07em;
+             border-bottom: 1px solid var(--ink-fade); padding-bottom: 4px; margin-bottom: 10px; }
+
+/* ── Stat rows ────────────────────────────── */
+#stats { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 12px; font-size: 14px; margin-top: 8px; }
+.stat-row { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--ink-fade); padding: 2px 0; }
+
+/* ── Bars ─────────────────────────────────── */
+.bar-label { display: flex; justify-content: space-between; font-family: var(--caps); font-size: 12px; letter-spacing: .05em; }
+.bar { height: 10px; border: 1px solid var(--ink); background: rgba(255,255,255,.25); margin: 3px 0 8px; overflow: hidden; }
+.bar-fill { display: block; height: 100%; transition: width .35s ease; }
+.hp-fill  { background: var(--red); }
+.mp-fill  { background: var(--blue); }
+.exp-fill { background: var(--green); }
+
+/* ── Currency ─────────────────────────────── */
+#currency { font-family: var(--caps); font-size: 13px; letter-spacing: .06em; color: var(--gold); margin-top: 6px; }
+
+/* ── Enemy card ───────────────────────────── */
+/* Fixed-height enemy area — always reserves space, no layout shift */
+#enemy-area {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1.5px dashed var(--ink-fade);
+  background: rgba(255,245,215,.2);
+}
+#enemy-area:empty::after {
+  content: '— no encounter —';
+  font-family: var(--hand);
+  font-size: 18px;
+  color: var(--ink-fade);
+  letter-spacing: .05em;
+}
+.enemy-card { text-align: center; padding: 12px; width: 100%;
+              border: 2px solid var(--ink); background: rgba(255,245,215,.4); }
+.enemy-card.miniboss { border-color: var(--red); }
+.enemy-sketch { font-size: 56px; line-height: 1; margin: 4px 0; }
+.enemy-name { font-family: var(--caps); font-size: 20px; letter-spacing: .06em; }
+.enemy-lvl { font-family: var(--hand); color: var(--ink-soft); font-size: 17px; }
+
+/* ── Log ──────────────────────────────────── */
+#log { height: 300px; overflow-y: auto; font-size: 15px; line-height: 1.6; padding-right: 4px; }
+.log-entry         { margin-bottom: 5px; }
+.log-entry.system  { color: var(--ink-soft); font-style: italic; }
+.log-entry.combat  { color: var(--red); }
+.log-entry.heal    { color: var(--green); }
+.log-entry.loot    { color: var(--gold); font-weight: bold; }
+.log-entry.special { color: var(--purple); font-weight: bold; }
+
+/* ── Buttons ──────────────────────────────── */
+#action-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;
+              padding: 12px; background: rgba(80,55,25,.06); border: 1px dashed var(--ink-fade); }
+
+.btn { font-family: var(--caps); letter-spacing: .08em; cursor: pointer; border: 1.5px solid var(--ink);
+       background: var(--paper); color: var(--ink); min-height: 52px; font-size: 14px;
+       padding: 10px 12px; box-shadow: 2px 2px 0 var(--ink); transition: all .08s ease; width: 100%; }
+.btn:hover:not(:disabled)  { background: var(--ink); color: var(--paper); transform: translate(1px,1px); box-shadow: 1px 1px 0 var(--ink); }
+.btn:active:not(:disabled) { transform: translate(2px,2px); box-shadow: none; }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+.btn-attack { color: var(--red);    border-color: var(--red);    box-shadow: 2px 2px 0 var(--red);    font-weight: bold; grid-column: span 2; min-height: 60px; font-size: 17px; }
+.btn-attack:hover:not(:disabled) { background: var(--red); color: var(--paper); }
+.btn-skill  { color: var(--blue);   border-color: var(--blue);   box-shadow: 2px 2px 0 var(--blue); }
+.btn-skill:hover:not(:disabled)  { background: var(--blue); color: var(--paper); }
+.btn-rest   { color: var(--green);  border-color: var(--green);  box-shadow: 2px 2px 0 var(--green); }
+.btn-rest:hover:not(:disabled)   { background: var(--green); color: var(--paper); }
+.btn-flee   { color: var(--ink-soft); border-color: var(--ink-soft); }
+
+/* ── Modal ────────────────────────────────── */
+#modal { position: fixed; inset: 0; background: rgba(20,12,5,.78); display: none;
+         align-items: center; justify-content: center; z-index: 99; padding: 20px; }
+.modal-box { background: var(--paper); border: 2px solid var(--ink); padding: 28px 30px;
+             max-width: 480px; width: 100%; box-shadow: 8px 8px 0 rgba(0,0,0,.4); }
+.modal-box h2 { font-family: var(--caps); font-size: 24px; letter-spacing: .06em;
+                border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-bottom: 14px; }
+.modal-box label { font-family: var(--caps); font-size: 13px; letter-spacing: .06em; }
+.modal-box input { font-family: var(--hand); font-size: 22px; background: transparent;
+                   border: none; border-bottom: 1px dashed var(--ink); color: var(--ink);
+                   padding: 4px; width: 100%; margin: 6px 0 14px; }
+
+.class-card { border: 1.5px solid var(--ink); padding: 12px 14px; cursor: pointer;
+              background: rgba(255,250,230,.4); margin-bottom: 8px; transition: all .1s; }
+.class-card:hover { background: var(--ink); color: var(--paper); }
+
+/* ── Inventory ─────────────────────────────── */
+.inv-row { display:flex; justify-content:space-between; align-items:center;
+           padding:6px 0; border-bottom:1px dotted var(--ink-fade); font-size:14px; }
+.inv-row:last-child { border-bottom:none; }
+.inv-row small { color:var(--ink-soft); font-style:italic; }
+
+/* ── Equipment slots ───────────────────────── */
+.equip-slot { display:flex; justify-content:space-between; font-size:13px;
+              padding:3px 0; border-bottom:1px dotted var(--ink-fade); margin-bottom:2px; }
+.slot-name { font-family:var(--caps); letter-spacing:.05em; color:var(--ink-soft); }
+.eq-tag { font-family:var(--caps); font-size:10px; color:var(--red);
+          border:1px solid var(--red); padding:0 3px; margin-left:4px; }
+.inv-btn { min-height:32px !important; font-size:11px !important;
+           width:auto !important; padding:3px 8px !important; }

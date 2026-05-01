@@ -1,0 +1,5 @@
+{
+  "slash":    { "name":"Slash",    "mp":0, "type":"phys", "power":1.2, "desc":"A solid swing." },
+  "backstab": { "name":"Backstab", "mp":0, "type":"phys", "power":1.1, "critBonus":25, "desc":"+crit chance." },
+  "spark":    { "name":"Spark",    "mp":3, "type":"mag",  "power":1.3, "desc":"Crackling bolt." }
+}

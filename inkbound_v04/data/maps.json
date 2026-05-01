@@ -1,0 +1,9 @@
+{
+  "meadow": {
+    "name": "Green Meadow",
+    "desc": "A page sketched with rolling hills and lazy clouds.",
+    "minLvl": 1,
+    "pool": ["slime", "slime", "goblin"],
+    "miniboss": ["giant_slime"]
+  }
+}
