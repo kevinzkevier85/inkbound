@@ -1,0 +1,86 @@
+{
+  "Swordsman": {
+    "tier":1, "parent":null, "hidden":false,
+    "desc":"Steel and sweat. High HP & ATK.",
+    "growth":{"str":3,"dex":1,"int":0,"vit":2,"wis":0,"luck":1},
+    "skills":["slash"]
+  },
+  "Rogue": {
+    "tier":1, "parent":null, "hidden":false,
+    "desc":"Swift, sneaky, lucky.",
+    "growth":{"str":1,"dex":3,"int":1,"vit":1,"wis":0,"luck":2},
+    "skills":["backstab"]
+  },
+  "Magician": {
+    "tier":1, "parent":null, "hidden":false,
+    "desc":"Fragile but explosive.",
+    "growth":{"str":0,"dex":1,"int":3,"vit":1,"wis":2,"luck":1},
+    "skills":["spark"]
+  },
+  "Knight": {
+    "tier":2, "parent":"Swordsman", "hidden":false,
+    "desc":"Iron will, immovable defense.",
+    "growth":{"str":3,"dex":1,"int":0,"vit":4,"wis":1,"luck":1},
+    "skills":["slash","shield_bash"]
+  },
+  "Berserker": {
+    "tier":2, "parent":"Swordsman", "hidden":false,
+    "desc":"Pain becomes power.",
+    "growth":{"str":5,"dex":2,"int":0,"vit":2,"wis":0,"luck":1},
+    "skills":["slash","reckless_strike"]
+  },
+  "Assassin": {
+    "tier":2, "parent":"Rogue", "hidden":false,
+    "desc":"One strike, one kill.",
+    "growth":{"str":2,"dex":5,"int":1,"vit":1,"wis":0,"luck":3},
+    "skills":["backstab","shadowstep"]
+  },
+  "Trickster": {
+    "tier":2, "parent":"Rogue", "hidden":false,
+    "desc":"Fortune's fool.",
+    "growth":{"str":1,"dex":4,"int":2,"vit":1,"wis":1,"luck":4},
+    "skills":["backstab","gambler"]
+  },
+  "Wizard": {
+    "tier":2, "parent":"Magician", "hidden":false,
+    "desc":"Master of arcana.",
+    "growth":{"str":0,"dex":1,"int":5,"vit":1,"wis":3,"luck":1},
+    "skills":["spark","fireball"]
+  },
+  "Witch": {
+    "tier":2, "parent":"Magician", "hidden":false,
+    "desc":"Curses and rituals.",
+    "growth":{"str":0,"dex":2,"int":4,"vit":1,"wis":4,"luck":1},
+    "skills":["spark","hex"]
+  },
+  "Paladin": {
+    "tier":3, "parent":"Knight", "hidden":false,
+    "desc":"Holy steel. Smites with divine power.",
+    "growth":{"str":4,"dex":1,"int":1,"vit":4,"wis":3,"luck":2},
+    "skills":["slash","shield_bash","smite"]
+  },
+  "Warlord": {
+    "tier":3, "parent":"Berserker", "hidden":false,
+    "desc":"A force of nature. The page shakes.",
+    "growth":{"str":7,"dex":2,"int":0,"vit":3,"wis":0,"luck":2},
+    "skills":["slash","reckless_strike","earthquake"]
+  },
+  "Shadowblade": {
+    "tier":3, "parent":"Assassin", "hidden":false,
+    "desc":"Walks between worlds.",
+    "growth":{"str":3,"dex":7,"int":1,"vit":2,"wis":1,"luck":4},
+    "skills":["backstab","shadowstep","umbral_dance"]
+  },
+  "Archmage": {
+    "tier":3, "parent":"Wizard", "hidden":false,
+    "desc":"Reality bends at the fingertips.",
+    "growth":{"str":0,"dex":1,"int":7,"vit":2,"wis":5,"luck":1},
+    "skills":["spark","fireball","meteor"]
+  },
+  "Soulmancer": {
+    "tier":3, "parent":"Witch", "hidden":false,
+    "desc":"Commands the void. Master of souls.",
+    "growth":{"str":0,"dex":2,"int":5,"vit":2,"wis":5,"luck":2},
+    "skills":["spark","hex","void_rend"]
+  }
+}

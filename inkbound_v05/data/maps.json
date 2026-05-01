@@ -1,0 +1,24 @@
+{
+  "meadow": {
+    "name":"Green Meadow",
+    "desc":"A page sketched with rolling hills and lazy clouds.",
+    "minLvl":1,
+    "pool":["slime","slime","goblin"],
+    "miniboss":["giant_slime"]
+  },
+  "void_forest": {
+    "name":"Void Forest",
+    "desc":"Trees of black ink. The air tastes of souls.",
+    "minLvl":5,
+    "pool":["shadow_wolf","void_bat","wraith","shadow_wolf"],
+    "miniboss":["void_sentinel"],
+    "special":true
+  },
+  "dark_dungeon": {
+    "name":"Dark Dungeon",
+    "desc":"Ancient stones etched with runes. The dead do not rest here.",
+    "minLvl":8,
+    "pool":["vampire","skeleton_knight","dark_mage","vampire"],
+    "miniboss":["lich"]
+  }
+}
