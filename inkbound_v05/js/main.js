@@ -20,8 +20,7 @@ const QUESTS = [
 // ── Boot ───────────────────────────────────────────────────────
 async function init() {
   addLog('Loading data…', 'system');
-  const base = new URL('.', import.meta.url).href.replace(/\/$/, '');
-  await loadAll(base);
+  await loadAll('.');
 
   const sheetUrl = getSavedUrl();
   if (sheetUrl) {
